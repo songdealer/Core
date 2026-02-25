@@ -1,3 +1,4 @@
+#if TUIST
 import ProjectDescription
 
 let project = Project(
@@ -28,3 +29,4 @@ let project = Project(
         ),
     ]
 )
+#endif
