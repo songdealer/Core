@@ -13,7 +13,11 @@ let package = Package(
     targets: [
         .target(
             name: "Keychain",
-            path: "Sources/Keychain"
+            path: "Sources/Keychain",
+            exclude: [
+                "../Sources/Keychain/Project.swift",
+                "../Tuist"
+            ]
         )
     ]
 )
