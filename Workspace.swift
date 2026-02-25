@@ -10,5 +10,5 @@ import ProjectDescription
 
 let workspace = Workspace(
     name: "Core",
-    projects: ["**", "Core/**"]
+    projects: ["Example/**", "Sources/**"]
 )

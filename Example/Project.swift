@@ -31,7 +31,7 @@ let project = Project(
                 "Resources",
             ],
             dependencies: [
-                .project(target: "Keychain", path: "Core/Keychain")
+                .project(target: "Keychain", path: "../Sources/Keychain")
             ]
         ),
         .target(
