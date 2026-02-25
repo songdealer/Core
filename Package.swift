@@ -5,15 +5,14 @@ let package = Package(
     name: "Core",
     platforms: [.iOS(.v13)],
     products: [
-//        .library(
-//            name: "Keychain",
-//            targets: ["Keychain"]
-//        )
+        .library(
+            name: "Keychain",
+            targets: ["Keychain"]
+        )
     ],
     targets: [
-//        .target(
-//            name: "Keychain",
-//            path: "Core/Keychain"
-//        )
+        .target(
+            name: "Keychain"
+        )
     ]
 )
