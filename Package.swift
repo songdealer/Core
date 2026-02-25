@@ -8,20 +8,12 @@ let package = Package(
         .library(
             name: "Keychain",
             targets: ["Keychain"]
-        ),
-        .library(
-            name: "Test",
-            targets: ["Test"]
         )
     ],
     targets: [
         .target(
             name: "Keychain",
             path: "Sources/Keychain"
-        ),
-        .target(
-            name: "Test",
-            path: "Sources/Test"
         )
     ]
 )
