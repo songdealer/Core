@@ -32,7 +32,7 @@ public final class KeychainUtils {
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: key,
             kSecAttrService: bundleIdentifier,
-//            kSecAttrAccessGroup: accessGroup, // Keychain에 저장되기 때문에 유니크한 identifier으로 앱간의 공유 데이터로 사용
+            kSecAttrAccessGroup: accessGroup, // Keychain에 저장되기 때문에 유니크한 identifier으로 앱간의 공유 데이터로 사용
             kSecValueData: data
         ]
         
@@ -57,7 +57,7 @@ public final class KeychainUtils {
                kSecClass: kSecClassGenericPassword,
                kSecAttrAccount: key,
                kSecAttrService: bundleIdentifier,
-//               kSecAttrAccessGroup: accessGroup
+               kSecAttrAccessGroup: accessGroup
            ]
         
         let status = SecItemDelete(query)
@@ -77,7 +77,7 @@ public final class KeychainUtils {
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: key,
             kSecAttrService: bundleIdentifier,
-//            kSecAttrAccessGroup: accessGroup,
+            kSecAttrAccessGroup: accessGroup,
             kSecReturnData: true,
             kSecMatchLimit: kSecMatchLimitOne
         ]
@@ -104,7 +104,7 @@ public final class KeychainUtils {
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: key,
             kSecAttrService: bundleIdentifier,
-//            kSecAttrAccessGroup: accessGroup
+            kSecAttrAccessGroup: accessGroup
         ]
 
         let attributes: NSDictionary = [
