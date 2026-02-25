@@ -1,3 +1,4 @@
+// swift-tools-version: 6.2
 import ProjectDescription
 
 let project = Project(
