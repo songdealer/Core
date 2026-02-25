@@ -6,13 +6,13 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "Keychain",
-            targets: ["Keychain"]
+            name: "Core",
+            targets: ["Core"]
         )
     ],
     targets: [
         .target(
-            name: "Keychain"
+            name: "Core"
         )
     ]
 )

@@ -17,7 +17,7 @@ public enum KeychainError: Error {
 
 public final class KeychainUtils {
     
-    public static let shared = KeychainUtils()
+    @MainActor public static let shared = KeychainUtils()
     // Keychain은 Keychain에 저장이 되기 때문에, 앱을 삭제하더라도 정보가 삭제되지 않음
     // Keychain에는 잠금 기능이 존재, 잠긴 상태에서는 아이템 값의 접근, 복호화 등 작업이 불가능함
     
