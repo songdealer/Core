@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "Keychain",
-            path: "Core/Keychain"
+            path: "Core"
         )
     ]
 )
