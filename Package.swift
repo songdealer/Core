@@ -12,7 +12,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Keychain"
+            name: "Keychain",
+            path: "Core/Keychain"
         )
     ]
 )
