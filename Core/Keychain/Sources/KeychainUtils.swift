@@ -15,7 +15,7 @@ public enum KeychainError: Error {
 // -25299 = errSecDuplicateItem => 중복 아이템
 // -34018 = errSecMissingEntitlement => accessGroup entitlements, capabilities 설정 필요
 
-public class KeychainUtils {
+public final class KeychainUtils {
     
     public static let shared = KeychainUtils()
     // Keychain은 Keychain에 저장이 되기 때문에, 앱을 삭제하더라도 정보가 삭제되지 않음
